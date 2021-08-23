@@ -1,0 +1,15 @@
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.csprojAssemblyReference.cache
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.AssemblyInfoInputs.cache
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.AssemblyInfo.cs
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.csproj.CoreCompileInputs.cache
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.exe
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.deps.json
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.runtimeconfig.json
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.runtimeconfig.dev.json
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.dll
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\last.rpc.pdb
+C:\Users\t y\source\repos\last.rpc\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.csproj.CopyComplete
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.dll
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.pdb
+C:\Users\t y\source\repos\last.rpc\obj\Release\netcoreapp3.1\last.rpc.genruntimeconfig.cache
