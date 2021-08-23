@@ -61,7 +61,7 @@ class Program
                                 isFavorite = extraData["isFavorite"];
                             };
                             var albumFormatted = "";
-                            if (nowplaying["album"] != "")
+                            if (nowplaying["album"] != "" && nowplaying["album"] != nowplaying["name"])
                             {
                                 albumFormatted = " - " + nowplaying["album"];
                             };
