@@ -58,8 +58,8 @@ class Program
                             bool isFavorite = false;
                             if (extraData.Count > 0)
                             {
-                                endOffset += extraData["duration"] || 0;
-                                isFavorite = extraData["isFavorite"] || false;
+                                endOffset += extraData["duration"];
+                                isFavorite = extraData["isFavorite"];
                             };
                             var albumFormatted = "";
                             if (nowplaying["album"] != "" && nowplaying["album"] != nowplaying["name"])
