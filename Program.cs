@@ -25,6 +25,7 @@ class Program
         Dictionary<string, string>? config = ConfigManager.GetConfig();
         string api_key = config["api_key"];
         string lastfm_user = config["lastfm_user"];
+        long poll_time = (config["poll_time"] != null ? Int64.Parse(config["poll_time"]) : (long)5) * 1000;
 
         Logger.LogLast("Fetching user \"" + lastfm_user + "\" on last.fm");
         lastapi lastfmapi = new lastapi(api_key);
@@ -57,8 +58,8 @@ class Program
                             bool isFavorite = false;
                             if (extraData.Count > 0)
                             {
-                                endOffset += extraData["duration"];
-                                isFavorite = extraData["isFavorite"];
+                                endOffset += extraData["duration"] || 0;
+                                isFavorite = extraData["isFavorite"] || false;
                             };
                             var albumFormatted = "";
                             if (nowplaying["album"] != "" && nowplaying["album"] != nowplaying["name"])
@@ -70,10 +71,6 @@ class Program
                                 Type = Discord.ActivityType.Listening,
                                 Details = nowplaying["name"],
                                 State = nowplaying["artist"] + albumFormatted,
-                                Timestamps =
-                                {
-                                    End = DateTimeOffset.Now.ToUnixTimeMilliseconds() + endOffset,
-                                },
                                 Assets =
                                 {
                                     LargeImage = "lastfm",
@@ -86,6 +83,10 @@ class Program
                                 activity.Assets.SmallImage = "loved";
                                 activity.Assets.SmallText = "Loved Track";
                             };
+                            if (endOffset > 0)
+                            {
+                                activity.Timestamps.End = DateTimeOffset.Now.ToUnixTimeMilliseconds() + endOffset;
+                            }
                             activityManager.UpdateActivity(activity, callback);
                         }
                     }

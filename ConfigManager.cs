@@ -10,6 +10,7 @@ public class ConfigManager
     private static string GetDefaultConfig()
     {
         Dictionary<string, string> DefaultConfigRaw = new Dictionary<string, string> { };
+        DefaultConfigRaw.Add("poll_time", "5000");
         DefaultConfigRaw.Add("lastfm_user", "YOUR LAST.FM USERNAME");
         DefaultConfigRaw.Add("api_key", "GET AN API KEY AT https://www.last.fm/api/account/create");
         return JsonConvert.SerializeObject(DefaultConfigRaw);
